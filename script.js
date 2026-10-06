@@ -1,5 +1,4 @@
 function kirimPesan() {
-
     let nama = document.getElementById("nama").value;
     let pesan = document.getElementById("isiPesan").value;
 
@@ -8,15 +7,14 @@ function kirimPesan() {
         return;
     }
 
-    document.getElementById("hasilPesan").innerHTML = `
-        <div class="pesan-kartu">
-            <h3>Pesan dari ${nama} 💙</h3>
-            <p>${pesan}</p>
-        </div>
-    `;
+    let nomorWhatsApp = "6285728583548";
 
-    document.getElementById("nama").value = "";
-    document.getElementById("isiPesan").value = "";
+    let teks = 
+        "Halo Lucky! 👋%0A%0A" +
+        "Nama: " + nama + "%0A" +
+        "Pesan: " + pesan;
 
-    alert("Pesan berhasil dikirim! 💌");
+    let linkWhatsApp = "https://wa.me/" + nomorWhatsApp + "?text=" + teks;
+
+    window.open(linkWhatsApp, "_blank");
 }
