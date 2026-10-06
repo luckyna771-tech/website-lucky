@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lucky Nur Amalia</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <h2>Lucky</h2>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Tentang Saya</a></li>
+            <li><a href="#pesan">Kirim Pesan</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home -->
+    <section id="home" class="home">
+        <div>
+            <p class="hello">HALO, AKU</p>
+
+            <h1>Lucky Nur Amalia</h1>
+
+            <p>
+                Selamat datang di website pribadi saya.
+                Senang bisa bertemu dengan kamu! 💙
+            </p>
+
+            <a href="#about" class="button">Kenal Lebih Dekat</a>
+        </div>
+    </section>
+
+    <!-- Tentang Saya -->
+    <section id="about" class="about">
+        <h2>Tentang Saya</h2>
+
+        <div class="card">
+            <h3>Lucky Nur Amalia</h3>
+
+            <p>
+                Halo! Nama saya Lucky Nur Amalia.
+                Saya adalah seorang pelajar yang tertarik dengan
+                dunia teknologi dan pemrograman.
+            </p>
+
+            <p>
+                Saya juga suka melakukan berbagai aktivitas seperti
+                badminton, mendengarkan musik, dan bersepeda.
+            </p>
+        </div>
+    </section>
+
+    <!-- Kirim Pesan -->
+    <section id="pesan" class="pesan">
+        <h2>Kirim Pesan Untuk Lucky 💌</h2>
+
+        <p>
+            Tulis pesan kamu di bawah ini!
+        </p>
+
+        <div class="form">
+            <input
+                type="text"
+                id="nama"
+                placeholder="Nama kamu"
+            >
+
+            <textarea
+                id="isiPesan"
+                placeholder="Tulis pesan untuk Lucky..."
+            ></textarea>
+
+            <button onclick="kirimPesan()">
+                Kirim Pesan 💙
+            </button>
+        </div>
+
+        <div id="hasilPesan"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Lucky Nur Amalia</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

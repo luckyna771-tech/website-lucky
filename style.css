@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eaf4ff;
+    color: #17324d;
+}
+
+/* NAVBAR */
+nav {
+    background: #0877d1;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav h2 {
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #bde3ff;
+}
+
+/* HOME */
+.home {
+    min-height: 90vh;
+    background: linear-gradient(
+        135deg,
+        #0877d1,
+        #38a9ff
+    );
+
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 30px;
+}
+
+.hello {
+    font-size: 18px;
+    letter-spacing: 4px;
+}
+
+.home h1 {
+    font-size: 50px;
+    margin: 15px 0;
+}
+
+.home p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.button {
+    display: inline-block;
+    background: white;
+    color: #0877d1;
+    padding: 13px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.button:hover {
+    background: #dff1ff;
+}
+
+/* ABOUT */
+.about {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.about h2,
+.pesan h2 {
+    color: #0877d1;
+    margin-bottom: 25px;
+}
+
+.card {
+    max-width: 700px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    color: #0877d1;
+    margin-bottom: 15px;
+}
+
+.card p {
+    margin: 12px 0;
+    line-height: 1.6;
+}
+
+/* PESAN */
+.pesan {
+    padding: 80px 10%;
+    text-align: center;
+    background: #d9efff;
+}
+
+.form {
+    max-width: 600px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input,
+textarea {
+    padding: 15px;
+    border: 2px solid #a9d9ff;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+textarea {
+    height: 150px;
+    resize: none;
+}
+
+button {
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: #0877d1;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #055da5;
+}
+
+/* HASIL PESAN */
+#hasilPesan {
+    max-width: 600px;
+    margin: auto;
+}
+
+.pesan-kartu {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: left;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.pesan-kartu h3 {
+    color: #0877d1;
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer {
+    background: #07528f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* HP */
+@media (max-width: 600px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        gap: 12px;
+        font-size: 14px;
+    }
+
+    .home h1 {
+        font-size: 35px;
+    }
+}
